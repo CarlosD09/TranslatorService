@@ -191,8 +191,7 @@ p {
 .rechteck {
   background-color: #fff;
   border: black 1px solid;
-  width: 50%;
-  height: 28rem;
+  width: 80%;
   margin: 200px auto;
   font-size: 30px;
   text-align: center;
