@@ -197,6 +197,10 @@ p {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  width: 100%;
+}
+
 .Kontakt-daten {
   text-align: center;
   font-size: 25px;
