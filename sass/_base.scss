@@ -1,0 +1,111 @@
+/*
+COLORS
+
+Primary:  #C8125C
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+
+:root { //root is for all the pages -- normal way to specify css variables
+
+
+    //colors 
+
+    --color-primary: #913175;
+    --color-primary-light-2: #c552a3;
+    --color-primary-light-1: #b73e94;
+    --color-primary-dark: #5e204c;
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: rgb(153, 153, 153);
+    --color-grey-dark-3-light: rgba(153, 153, 153,.3);
+
+    //shadows
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
+}
+
+// SASS MEDIA VARIABLES
+$bp-largest: 106.25em; // 1700px
+$bp-large: 75em; // 1200px
+$bp-medi: 56.25em; //900px
+$bp-small: 43.75em; // 700px
+$bp-small-2: 37.5em; //600px
+$bp-small-3: 31.25em; //500px
+$bp-smallest: 18.75em; //300px
+$bp-smallest-2: 15.625em; //2500px
+
+
+
+
+::selection {
+    background-color: var(--color-primary-light-1);
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* text-decoration: none;
+    list-style: none; */
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 10px*/
+
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 60%;
+    }
+
+    @media only screen and (max-width: $bp-medi){
+        font-size: 50%;
+    }
+
+    @media screen and (max-width: $bp-small-3){
+        font-size: 40%,
+    }
+
+    @media screen and (max-width: $bp-smallest){
+        font-size: 30%,
+    }
+     
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    
+
+    background-color: #fff;
+
+    padding: 2.5rem;
+
+    @media only screen and (max-width: $bp-large){
+        padding: 0;
+    }
+}
